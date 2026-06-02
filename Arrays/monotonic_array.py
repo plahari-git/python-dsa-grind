@@ -1,0 +1,15 @@
+class Solution(object):
+    def isMonotonic(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        nums1=sorted(nums)
+        nums2=sorted(nums,reverse=True)
+        if nums==nums1:
+            return True
+        elif nums==nums2:
+            return True
+        else:
+            return False
+        
